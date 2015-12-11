@@ -1,6 +1,7 @@
 This is my solution to [The Riddler](https://fivethirtyeight.com/features/whats-the-best-way-to-drop-a-smartphone/?ex_cid=538fb) from 11 Dec 2015 from FiveThirtyEight.
 
 My solution devises the following mechanism as the ideal scheme for dropping the smart phone.
+
 1. Pick `n` between 1 and the number of floors in our building (`nFloors`).
 2. Go up `n` floors and drop one of the phones. If it breaks, then go to floor 1 and drop the other phone on every floor between 1 and `n-1` until the phone breaks, this is then your maximum height (if it does not break by floor `n-1`, then your maximum floor is `n`). If it does not break, proceed to step 3.
 3. Go up another `n` floors, to bring you to `2n` and drop one of the phones. If it breaks, drop the other phone on every floor between `n+1` and `2n-1` until the phone breaks, this is then your maximum height (again if it does not break by floor `2n-1`, then your maximum floor is `n`). If it does not break, proceed to step 4.
